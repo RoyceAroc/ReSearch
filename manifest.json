@@ -1,0 +1,30 @@
+{
+  "name": "ReSearch",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Tired of reading long articles and text for answers? We got your back. ReSearch enables users to find answers instantly.",
+  "icons": {
+    "128": "logo128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jquery.min.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "ReSearch"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+      "tabs",
+      "notifications",
+      "http://*/",
+      "https://*/", 
+      "contextMenus"
+  ],
+    "content_security_policy":  "default-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net/; connect-src * data: blob: filesystem:;"
+}
