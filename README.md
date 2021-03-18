@@ -16,3 +16,6 @@ Description TBD
     * Click "Load unpacked" and navigate to and select your `ReSearch` directory
 3. Use the extension
     * Using Extension Steps TBD
+    * 
+## Contributors
+This application is open-source and anyone can collaborate by creating a new branch. 
