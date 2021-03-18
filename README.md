@@ -3,6 +3,7 @@
 ReSearch is a chrome extension that allows the user to receive answers to the questions they ask regarding the content on an individual page. 
 
 ## Prerequisites
+Chrome Browser with GPU
 
 ## Set up and Demo
 
