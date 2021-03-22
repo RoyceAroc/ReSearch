@@ -1,0 +1,25 @@
+
+#question {
+    width: 500px;
+    color: #0097A7;
+    resize: none;
+}
+#search {
+    background-color: #0097A7;
+    border: 1px solid white;
+    color: white;
+    zoom: 120%;
+    margin-top: 2%;
+    cursor: pointer;
+}
+img {
+    zoom: 30%;
+    right:0;
+    top: 10px;
+    position: fixed;
+}
+#search:hover {
+    background-color: white;
+    color: #0097A7;
+    border: 1px solid black;
+}

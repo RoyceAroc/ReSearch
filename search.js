@@ -11,7 +11,7 @@ function myFunction(){
             qna.load().then(model => {
                 model.findAnswers(document.getElementById("question").value, String(result)).then(answers => {
                     chrome.tabs.executeScript(tab.id, {
-                        code: '$(window).scrollTop($("*:contains(' + answers[0].text + '):last").offset().top-200);$("*:contains(' + answers[0].text + '):last").css("background-color", "lightblue");'
+                        code: '$(window).scrollTop($("*:contains(' + answers[0].text + '):last").offset().top-200);$("*:contains(' + answers[0].text + '):last").css("background-color", "lightblue");$("*:contains(' + answers[0].text + '):last").css("color", "black");'
                     }, function(result) {console.log(result) });
                 });
             });
